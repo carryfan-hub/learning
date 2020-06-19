@@ -28,7 +28,8 @@ class student:
 
 go = student()
 go.info()
-print("hello world")
+f="".join(x)
+print(f)
                 
             
 

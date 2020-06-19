@@ -28,6 +28,7 @@ class student:
 
 go = student()
 go.info()
+print("hello world")
                 
             
 

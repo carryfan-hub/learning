@@ -37,6 +37,7 @@ def showhim():
         @classmethod
         def class_variable(cls):
             x.insert(0,cls.l)
+        
     m = sutility()
         
     m.name = str(input())

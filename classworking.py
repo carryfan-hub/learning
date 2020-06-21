@@ -19,8 +19,8 @@ class student:
         
         print(self.m)
     @staticmethod
-    def rodo():
-        print()
+    def rodo(w):
+        print("hello")
 
     
 w=student()

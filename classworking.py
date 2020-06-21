@@ -33,7 +33,7 @@ s._init_("frodo",34,56)
 s.temporary_method()
 w.temporary_method()
 w.info()
-student.rodo(w)
+
 
   
 

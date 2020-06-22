@@ -21,20 +21,21 @@ print(m)
 st="".join(s)
 print(st)
 print(s)
-o=0
-q=0
-op=0
-for us in st:
-    if c.hump(us)==s[op]:
-        o+=1
-    else:
-        q+=1
-    op+=1
-    if op == len(s):
-        break
 
-print(o)
-print(q)
+h=[]
+ku=[]
+t=0
+for us in st:
+    if c.hump(us)==s[t]:
+        h.append(us)
+    else:
+        ku.append(us)
+    t+=1
+    if t == len(s):
+        break
+print(len(h))
+print(len(ku))
+
 
 
 

@@ -35,6 +35,8 @@ for us in st:
         break
 print(len(h))
 print(len(ku))
+oiu=2
+print(oiu)
 
 
 

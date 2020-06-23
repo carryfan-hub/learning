@@ -15,5 +15,4 @@ def connect():
 g = Button(window,text="connect",command=connect)
 g.pack()
 window.mainloop()
-
-
+#ok

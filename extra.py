@@ -31,5 +31,17 @@ while True:
         break
     
 print(m)
+okn = []
+for b in m:
+    okn.append(op[b])
+print(okn)
+#final output
+output = []
+for i in okn:
+    for mv in x:
+        if i == mv[0]:
+            output.append(mv)
+        else:
+            continue
 
-
+print(output)

@@ -37,7 +37,9 @@ def electroconfig(x):
                     
 if __name__ == "__main__":
     electroconfig(x)
-mk=[]
+mk=[2,10,18,36,54,86,118]
+vxz=[]
+mc=[]
 i = 1
 while i>0:
     r = i**2
@@ -64,60 +66,50 @@ while i>0:
                     s.pop(th)
                 kk+=1
     
-    if len(c)==1:
-        for a in c:
-            v=str(i)+"s"+str(a)
-            mk.append(v)
-        
-    if len(c)==4 or len(c)<4 and i == 2:
-        
-        qwe = 0
-        for dc in range(0,len(c)):
-            
-            if dc == 0 :
-                fg = "2"+"s"+str(c[dc])
-                mk.append(fg)
-            if dc!= 0 :
-                qwe+=int(c[dc])
-            if dc == len(c)-1 :
-                vc = "2"+"p"+str(qwe)
-                
-                mk.append(vc)
-        c.clear()
-    if len(c)<=9 and i == 3:
-        for xc in range(0,len(c)):
-            if xc==0:
-                fd = "3"+"s"+str(c[xc])
-                mk.append(fd)
-            if xc !=0:
-                po =[]
-                for was in range(1,len(c)):
-                    po.append(was)
-                if len(po)<4:
-                    ert=0
-                    for gfd in range(0,len(po)):
-                        ert+=int(po[gfd])
-                    bcx = "3"+"p"+str(ert)
-                    mk.append(bcx)
-                    c.clear()
-                if len(po)>4:
-                    ert=0
-                    for gfd in range(0,4):
-                        ert+=int(po[gfd])
-                    ku = 0
-                    while ku<4:
-                        po.pop(ku)
-                        ku+=1
                     
                 
                 
-                        
-    
+    for ewq in mk:
+        cd = x-ewq
+        if cd<0:
+            break
+        else:
+            vxz.append(ewq)
         
+    po=max(vxz)
+    print(po)
+    for esa in mk:
+        g=x-esa
+        if g <0:
+            kgf=esa
+            print(kgf)
+            break
+            
+    if i == 2:
+        hgf = int(kgf)-x
+        gdsm=[5,4,3,2,1]
+        kjhn=[6,7]
+        if hgf in gdsm:
+            kx = ["s","p"]
+            y=-1
+            for edf in kx:
+                
+                y+=1
+                while y<len(c):
+                    fdg = str(po)+"2"+str(edf)+str(c[y])
+                    mc.append(fdg)
+                    break
+        if hgf in kjhn:
+            fdg = str(po)+"2"+"s"+str(c[-1])
+            mc.append(fdg)
+            
+    
+                    
     
         
     if s == []:
-        print(mk)
+        print(mc)
+        
         print(i)
         
         break

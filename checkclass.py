@@ -2,161 +2,54 @@
 #praise the lord,jesus,christ
 #lord jesus christplease help me
 x=int(input())
-s=[]
 
-def electroconfig(x):
-    global s
-    i = 1
-    
-    
-    while True:
-        for t in range(0,i):
-            if t == 0:
-                m=2
-                x-=m
-                
-                s.append(m)
-                
-            else:
-                for w in range(-t,t+1):
-                    if x == 1:
-                        l = 1
-                        x-=l
-                        s.append(l)
-                    if x!=0 and x!=1:
-                        l=2
-                        x-=l
-                        s.append(l)
-                    if x == 0:
-                        break
-        i+=1
-        if x == 0:
-            print(s)
-            
-            break
-                    
-if __name__ == "__main__":
-    electroconfig(x)
-mk=[2,10,18,36,54,86,118]
-vxz=[]
-mc=[]
-i = 1
-while i>0:
-    r = i**2
-    c=[]
-    d = []
-    for t in range(0,r):
-        d.append(t)
-    
-    if len(s)<len(d):
-        for eo in s:
-            c.append(eo)
-        print(c)
-        s.clear()
-    if len(s)>len(d):
-        for e in range(0,len(d)):
-            c.append(s[e])
-        print(c)
-        if len(d)==1:
-            s.pop(0)
+d=["1s","2s","2p","3s","3p","4s","3d","4p","5s","4d","5p","6s","4f","5d","6p","7s","5f","6d","7p"]
+v=[]
+for rt in d:
+    if "s" in rt:
+        if x>=2:
+            kl = rt + "2"
+            v.append(kl)
+            x-=2
         else:
-            kk = 0
-            while kk<len(d):
-                for th in range(0,1):
-                    s.pop(th)
-                kk+=1
-    
-                    
-                
-                
-    for ewq in mk:
-        cd = x-ewq
-        if cd<0:
+            kl  = rt + str(x)
+            v.append(kl)
+            print(v)
             break
+    if "p" in rt:
+        if x>=6:
+            kl = rt+"6"
+            v.append(kl)
+            x-=6
         else:
-            vxz.append(ewq)
-        
-    po=max(vxz)
-    print(po)
-    for esa in mk:
-        g=x-esa
-        if g <0:
-            kgf=esa
-            print(kgf)
+            kl = rt + str(x)
+            v.append(kl)
+            print(v)
+            break
+    if "d" in rt:
+        if x>=10:
+            kl = rt + "10"
+            v.append(kl)
+            x-=10
+        else:
+            kl = rt+str(x)
+            v.append(kl)
+            print(v)
+            break
+    if "f" in rt:
+        if x>=14:
+            kl = rt + "14"
+            v.append(kl)
+            x-=14
+        else:
+            kl = rt + str(x)
+            v.append(kl)
+            print(v)
             break
             
-    if i == 2:
-        hgf = int(kgf)-x
-        gdsm=[5,4,3,2,1]
-        kjhn=[6,7]
-        if hgf in gdsm:
-            kx = ["s","p"]
-            y=-1
-            for edf in kx:
-                
-                y+=1
-                while y<len(c):
-                    fdg = str(po)+"2"+str(edf)+str(c[y])
-                    mc.append(fdg)
-                    break
-        if hgf in kjhn:
-            fdg = str(po)+"2"+"s"+str(c[-1])
-            mc.append(fdg)
-            
-    
-                    
-    
-        
-    if s == []:
-        print(mc)
-        
-        print(i)
-        
+    if x == 0:
+        print(v)
         break
-        
     else:
-        i+=1
+        continue
         
-    
-            
-                
-                
-        
-    
-    
-                
-        
-    
-        
-        
-    
-    
-    
-            
-    
-        
-        
-        
-        
-            
-    
-
-    
-    
-    
-
-
-        
-    
-
-        
-        
-        
-
-                
-                
-                
-                
-    
-       
-       

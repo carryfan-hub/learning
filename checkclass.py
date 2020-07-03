@@ -11,7 +11,7 @@ for rt in d:
             kl = rt + "2"
             v.append(kl)
             x-=2
-        else:
+        elif x<2:
             kl  = rt + str(x)
             v.append(kl)
             print(v)
@@ -21,7 +21,7 @@ for rt in d:
             kl = rt+"6"
             v.append(kl)
             x-=6
-        else:
+        elif x<6:
             kl = rt + str(x)
             v.append(kl)
             print(v)
@@ -31,7 +31,7 @@ for rt in d:
             kl = rt + "10"
             v.append(kl)
             x-=10
-        else:
+        elif x<10:
             kl = rt+str(x)
             v.append(kl)
             print(v)
@@ -41,7 +41,7 @@ for rt in d:
             kl = rt + "14"
             v.append(kl)
             x-=14
-        else:
+        elif x<14:
             kl = rt + str(x)
             v.append(kl)
             print(v)
